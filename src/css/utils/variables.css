@@ -1,3 +1,25 @@
 :root {
+  /* Colors */
+  --white-color: #fff;
+  --black-color: #121417;
+  --green-color: #4dc274;
+  --light-green-color: #d4fde1;
+  --gray-color: #f3f5f6;
 
+  /* Borders */
+  --button-border-radius: 12px;
+  --field-border-radius: 12px;
+  --card-border-radius: 30px;
+  --card-border-radius-mobile: 16px;
+  --portrait-border-radius: 500px;
+
+  /* Icons */
+  --menu-icon-width-mobile: 32px;
+  --menu-icon-width: 40px;
+
+  --arrow-icon-width-mobile: 38px;
+  --arrow-icon-width: 48px;
+
+  --social-icon-width-mobile: 42px;
+  --social-icon-width: 44px;
 }
