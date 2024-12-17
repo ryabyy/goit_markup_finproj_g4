@@ -1,25 +1,26 @@
 <!-- Adaptive header, by Volodymyr Vladykin -->
 <header class="header">
-  <div class="container">
-    <!-- Navigation -->
+  <div class="header__container container">
+    <!-- Logo, link to core page -->
+    <div class="logo">
+      <a class="logo__link" href="./index.html"
+        ><span class="logo__link--dark">english</span>excellence<span
+          class="logo__link--dark"
+          >.</span
+        ></a
+      >
+    </div>
+
+    <!-- Mobile menu button, will be hidden on desktop -->
+    <button class="header__mobile_menu_button" type="button">
+      <svg class="header__mobile_menu_icon" width="32" height="32">
+        <use href="./img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <!-- Main navigation -->
     <nav class="nav">
-      <!-- Logo, link to core page -->
-      <div class="logo">
-        <a class="logo__link" href="./index.html">
-          <span class="logo__link--dark">english</span>
-          excellence
-          <span class="logo__link--dark">.</span>
-        </a>
-      </div>
-
-      <!-- Mobile menu button, will be hidden on desktop -->
-      <button class="header__mobile_menu_button" type="button">
-        <svg class="header__mobile_menu_icon" width="32" height="32">
-          <use href="./img/sprite.svg#icon-menu"></use>
-        </svg>
-      </button>
-
-      <!-- Actual navigation menu (visible only on desktop) -->
+      <!-- Navigation menu (visible only on desktop) -->
       <ul class="header__nav_list">
         <li><a href="#" class="header__nav_link">About us</a></li>
         <li><a href="#" class="header__nav_link">Our lessons</a></li>
@@ -30,7 +31,7 @@
     </nav>
 
     <div class="socials">
-      <ul>
+      <ul class="socials__list">
         <li class="socials__item">
           <a href="" class="socials__link">
             <svg class="socials__link_icon" width="28" height="28">
