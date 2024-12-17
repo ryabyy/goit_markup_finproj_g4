@@ -12,12 +12,29 @@
 .header__mobile_menu_button {
   width: 32px;
   height: 32px;
-}
 
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .header__mobile_menu_button {
+    width: 40px;
+    height: 28px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .header__mobile_menu_button {
     display: none;
   }
+}
+
+.header__mobile_menu_icon {
+  stroke: var(--black-color);
 }
 
 /* Nav is visible only on desktop */
