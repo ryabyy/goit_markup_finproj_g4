@@ -22,4 +22,59 @@
 
   --social-icon-width-mobile: 42px;
   --social-icon-width: 44px;
+
+  /* Fonts */
+  --common-font: Manrope;
+
+  --button-font-size: 18px;
+  --button-font-size-mobile: 14px;
+
+  --field-font-size: 16px;
+  --field-font-size-mobile: 14px;
+
+  --heading-font-size: 40px;
+  --heading-font-size-mobile: 32px;
+
+  --description-font-size: 18px;
+  --description-font-size-mobile: 14px;
+
+  --navigation-font-size: 14px;
+
+  --hero-font-size: 60px;
+  --hero-font-size-mobile: 38px;
+
+  --proposal-header-font-size: 60px;
+  --proposal-subheader-font-size: 40px;
+  --proposal-features-font-size: 20px;
+
+  --application-card-header-font-size: 40px;
+  --application-card-description-font-size: 16px;
+
+  --application-section-header-font-size: 20px;
+  --application-section-header-font-size-mobile: 18px;
+  --radio-button-font-size: 18px;
+  --radio-button-font-size-mobile: 14px;
+
+  --review-name-font-size: 20px;
+  --review-role-font-size: 12px;
+  --review-descr-font-size: 16px;
+  --review-descr-font-size-mobile: 14px;
+
+  --bio-name-font-size: 20px;
+  --bio-descr-font-size: 16px;
+  --bio-descr-font-size-mobile: 14px;
+
+  --benefit-number-font-size: 28px;
+  --benefit-text-font-size: 20px;
+
+  --plan-name-font-size: 20px;
+  --plan-price-font-size: 32px;
+  --plan-descr-font-size: 16px;
+  --plan-descr-font-size-mobile: 14px;
+
+  --privacy-agreement-font-size: 14px;
+  --privacy-agreement-font-size-mobile: 12px;
+
+  --footer-address-font-size: 14px;
+  --footer-legal-font-size: 14px;
 }
