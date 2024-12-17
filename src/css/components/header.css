@@ -51,7 +51,6 @@
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    align-items: center;
     /* justify-content: space-between; */
     /* justify-items: center; */
   }
@@ -60,6 +59,9 @@
 .header__nav_list {
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Socials is visible only on desktop */
@@ -83,4 +85,32 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 12px;
+}
+.socials__item {
+}
+.socials__link {
+  /* apply alpha channel to black color to achieve border at 10% */
+  border: 1px solid rgb(from var(--black-color) r g b / 0.1);
+  border-radius: 10px;
+  padding: 7px; /* note padding here, it's 7 instead of 8, to consider 1px border and preserve total size of item as 44px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--black-color);
+}
+.socials__link:hover {
+  color: var(--green-color);
+
+  /* apply alpha channel to green color to achieve border at 10% */
+  border-color: rgb(from var(--green-color) r g b / 0.1);
+}
+
+.socials__link_icon {
+  width: 28px;
+  height: 28px;
+
+  fill: currentColor;
 }
