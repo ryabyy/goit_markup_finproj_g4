@@ -35,18 +35,18 @@
 .menu {
   position: fixed;
   top: 0;
-  right: 0; /* Stick to the right */
+  right: 0;
   background: #4dc274;
   width: 240px;
   height: 100vh;
-  z-index: 1000; /* On top of overlay */
+  z-index: 1000;
 }
 
 /* Close Button */
 .menu-close {
   position: absolute;
   top: 20px;
-  left: 20px; /* Close button on the left side of menu */
+  right: 20px;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -55,7 +55,7 @@
 .menu-close svg {
   width: 100%;
   height: 100%;
-  fill: white;
+  stroke: white;
 }
 
 /* Navigation Links */
