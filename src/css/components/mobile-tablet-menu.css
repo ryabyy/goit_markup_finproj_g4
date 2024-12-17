@@ -1,0 +1,121 @@
+/* Menu Overlay */
+.menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 375px;
+    height: 7928px;
+    background: rgba(18, 20, 23, 0.4); /* #12141766 */
+    z-index: 999;
+    opacity: 1;
+}
+
+/* Tablet Overlay Adjustments */
+@media (min-width: 768px) {
+    .menu-overlay {
+        width: 768px;
+        height: 6948px;
+    }
+}
+
+/* Menu Container */
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0; /* Stick to the right */
+    background: #4DC274;
+    width: 240px;
+    height: 100vh;
+    z-index: 1000; /* On top of overlay */
+}
+
+/* Close Button */
+.menu-close {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Close button on the left side of menu */
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.menu-close svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation Links */
+.menu-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.menu-link {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.menu-link:hover {
+    opacity: 0.7;
+}
+
+/* Social Icons */
+.menu-socials {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
+.social-icon svg {
+    width: 26px;
+    height: 26px;
+    fill: white;
+}
+
+/* Tablet Menu Adjustments */
+@media (min-width: 768px) {
+    .menu {
+        width: 384px;
+    }
+
+    .menu-close {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+}
