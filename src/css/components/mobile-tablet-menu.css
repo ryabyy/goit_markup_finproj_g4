@@ -2,7 +2,7 @@
 .menu-overlay {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 /* Shown state with is-shown class */
@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 7928px;
+  height: 100%;
   background: rgba(18, 20, 23, 0.4); /* #12141766 */
   z-index: 999;
   opacity: 1;
