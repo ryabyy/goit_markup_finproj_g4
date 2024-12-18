@@ -1,23 +1,51 @@
-/*#region Base set style */
 .teachers__list {
   margin-top: 40px;
-
-  /* using grit reduces code writing */
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 40px;
 }
+
+.teachers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacher__img {
+  margin-bottom: 16px;
+}
+
+.teacher__name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: rgb(18, 20, 23);
+}
+
+.teacher__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(18, 20, 23, 50%);
+}
+
 @media only screen and (min-width: 768px) {
   .teachers__list {
-    margin-top: 64px;
     padding: 0 64px;
-
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 32px;
     grid-row-gap: 53px;
   }
+
+  .teacher__description {
+    font-size: 16px;
+  }
 }
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1280px) {
   .teachers__list {
     padding: 0;
     grid-template-columns: repeat(4, 1fr);
@@ -25,33 +53,3 @@
     grid-row-gap: 0;
   }
 }
-/* #endregion */
-/* #region style cart */
-.teachers__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.teacher__name {
-  margin-top: 16px;
-
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-
-  color: rgb(18, 20, 23);
-}
-
-.teacher__description {
-  margin-top: 8px;
-
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-
-  color: rgb(18, 20, 23, 50%);
-}
-/* #endregion */
