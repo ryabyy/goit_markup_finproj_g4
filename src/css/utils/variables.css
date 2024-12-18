@@ -23,11 +23,11 @@
   --social-icon-width-mobile: 42px;
   --social-icon-width: 44px;
 
-  /* Fonts */
-  --common-font: Manrope;
-
   /* Transitions */
   --default-trns: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Fonts */
+  --common-font: Manrope;
 
   --button-font-size: 18px;
   --button-font-size-mobile: 14px;
