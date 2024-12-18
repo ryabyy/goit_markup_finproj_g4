@@ -64,6 +64,17 @@
   gap: 20px;
 }
 
+/* TODO logo part into base styles? */
+.logo {
+  color: var(--green-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logo__link--dark {
+  color: var(--black-color);
+}
+
 /* Socials is visible only on desktop */
 /* TODO socials to base styles maybe? */
 .socials {
