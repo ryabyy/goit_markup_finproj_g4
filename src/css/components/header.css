@@ -125,30 +125,30 @@
 
 /* Socials, visible only on desktop */
 /* TODO socials to base styles maybe? */
-.socials {
+.main-socials {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  .socials {
+  .main-socials {
     display: none;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .socials {
+  .main-socials {
     display: flex;
     align-items: center;
   }
 }
 
-.socials__list {
+.main-socials__list {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
 }
-.socials__item {
+.main-socials__item {
 }
-.socials__link {
+.main-socials__link {
   /* apply alpha channel to black color to achieve border at 10% */
   border: 1px solid rgb(from var(--black-color) r g b / 0.1);
   border-radius: 10px;
@@ -162,14 +162,14 @@
   transition: var(--default-trns);
   transition-property: color, border-color;
 }
-.socials__link:hover {
+.main-socials__link:hover {
   color: var(--green-color);
 
   /* apply alpha channel to green color to achieve border at 10% */
   border-color: rgb(from var(--green-color) r g b / 0.1);
 }
 
-.socials__link_icon {
+.main-socials__link_icon {
   width: 28px;
   height: 28px;
 
