@@ -23,8 +23,8 @@
 }
 
 .header__mobile_menu_button {
-  width: 32px;
-  height: 32px;
+  width: var(--menu-icon-width-mobile);
+  height: var(--menu-icon-width-mobile);
 
   padding: 0;
   border: none;
@@ -36,7 +36,7 @@
 }
 @media only screen and (min-width: 768px) {
   .header__mobile_menu_button {
-    width: 40px;
+    width: var(--menu-icon-width);
     height: 28px;
   }
 }
@@ -76,8 +76,6 @@
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* justify-items: center; */
   }
 }
 
@@ -98,7 +96,7 @@
   min-width: 37px;
 
   font-weight: 600;
-  font-size: 14px;
+  font-size: var(--navigation-font-size);
   line-height: 1.29;
   color: var(--black-color);
 }
@@ -145,8 +143,6 @@
   flex-direction: row;
   align-items: center;
   gap: 12px;
-}
-.main-socials__item {
 }
 .main-socials__link {
   /* apply alpha channel to black color to achieve border at 10% */
