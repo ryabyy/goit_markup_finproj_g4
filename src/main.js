@@ -1,3 +1,5 @@
+import 'modern-normalize/modern-normalize.css';
+
 (function () {
     const mobileMenuOpenButton = document.querySelector('.header__mobile_menu_button');
     const mobileMenuCloseButton = document.querySelector('.menu-close');
