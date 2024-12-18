@@ -1,29 +1,25 @@
-/* Initial hidden state for overlay and menu */
 .menu-overlay {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* Shown state with is-shown class */
 .menu-overlay.is-shown {
   visibility: visible;
   opacity: 1;
 }
 
-/* Menu Overlay */
 .menu-overlay {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(18, 20, 23, 0.4); /* #12141766 */
+  background: rgba(18, 20, 23, 0.4);
   z-index: 999;
   opacity: 1;
 }
 
-/* Menu Container */
 .menu {
   position: fixed;
   top: 0;
@@ -32,13 +28,15 @@
   width: 240px;
   height: 100vh;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Close Button */
 .menu-close {
-  position: absolute;
-  top: 30px;
-  right: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: auto;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -50,13 +48,11 @@
   stroke: white;
 }
 
-/* Navigation Links */
 .menu-navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 248px;
 }
 
 .menu-link {
@@ -72,12 +68,10 @@
   opacity: 0.7;
 }
 
-/* Social Icons */
 .menu-socials {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
   display: flex;
   gap: 12px;
 }
@@ -104,14 +98,13 @@
   fill: white;
 }
 
-/* Tablet Menu Adjustments */
 @media (min-width: 768px) {
   .menu {
     width: 384px;
   }
 
   .menu-close {
-    right: 42px;
+    margin-right: 42px;
     width: 40px;
     height: 40px;
   }
