@@ -8,7 +8,7 @@
     padding: 19px 0px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .header {
     /* to achieve desktop height 84px */
     padding: 20px 0px;
@@ -40,7 +40,7 @@
     height: 28px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .header__mobile_menu_button {
     display: none;
   }
@@ -71,7 +71,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .nav {
     display: flex;
     flex-grow: 1;
@@ -133,7 +133,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .socials {
     display: flex;
     align-items: center;
