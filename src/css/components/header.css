@@ -37,7 +37,19 @@
   stroke: var(--black-color);
 }
 
-/* Nav is visible only on desktop */
+/* Logo */
+/* TODO logo part into base styles? */
+.logo {
+  color: var(--green-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logo__link--dark {
+  color: var(--black-color);
+}
+
+/* Nav, visible only on desktop */
 .nav {
   display: none;
 }
@@ -56,6 +68,7 @@
   }
 }
 
+/* Nav links, visible only on desktop */
 .header__nav_list {
   display: flex;
   flex-direction: row;
@@ -64,18 +77,40 @@
   gap: 20px;
 }
 
-/* TODO logo part into base styles? */
-.logo {
-  color: var(--green-color);
-  font-weight: 700;
-  font-size: 20px;
-}
+.header__nav_link {
+  /* to power pseudo-element */
+  position: relative;
 
-.logo__link--dark {
+  /* just for case, since size of pseudo-element is 37px */
+  min-width: 37px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
   color: var(--black-color);
 }
+.header__nav_link:after {
+  content: '';
 
-/* Socials is visible only on desktop */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+
+  width: 37px;
+  height: 2px;
+  background-color: var(--green-color);
+
+  /* transition, define it here, and make it visible when :hover */
+  transition: var(--default-trns);
+  transition-property: scale;
+  scale: 0;
+  transform-origin: left;
+}
+.header__nav_link:hover::after {
+  scale: 1;
+}
+
+/* Socials, visible only on desktop */
 /* TODO socials to base styles maybe? */
 .socials {
   display: none;
