@@ -1,5 +1,18 @@
 .header {
-  padding: 20px 0px;
+  /* to achieve mobile header height 68px */
+  padding: 18px 0px;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    /* to achieve tablet header height 68px */
+    padding: 19px 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header {
+    /* to achieve desktop height 84px */
+    padding: 20px 0px;
+  }
 }
 
 .header__container {
