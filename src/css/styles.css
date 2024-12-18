@@ -5,6 +5,9 @@
   |============================
 */
 
+/* Modern-normalize */
+@import 'modern-normalize';
+
 /* Common variables */
 @import url('./utils/variables.css');
 
