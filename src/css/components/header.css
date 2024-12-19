@@ -2,27 +2,15 @@
   /* to achieve mobile header height 68px */
   padding: 18px 0px;
 }
-@media only screen and (min-width: 768px) {
-  .header {
-    /* to achieve tablet header height 68px */
-    padding: 19px 0px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .header {
-    /* to achieve desktop height 84px */
-    padding: 20px 0px;
-  }
-}
 
-.header__container {
+.header .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__mobile_menu_button {
+.menu-button {
   width: var(--menu-icon-width-mobile);
   height: var(--menu-icon-width-mobile);
 
@@ -34,19 +22,8 @@
   justify-content: center;
   align-items: center;
 }
-@media only screen and (min-width: 768px) {
-  .header__mobile_menu_button {
-    width: var(--menu-icon-width);
-    height: 28px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .header__mobile_menu_button {
-    display: none;
-  }
-}
 
-.header__mobile_menu_icon {
+.menu-button_icon {
   stroke: var(--black-color);
 }
 
@@ -56,20 +33,8 @@
 }
 
 /* Nav, visible only on desktop */
-.nav {
+.header__nav {
   display: none;
-}
-@media only screen and (min-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .nav {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-  }
 }
 
 /* Nav links, visible only on desktop */
@@ -89,17 +54,6 @@
 .header-socials {
   display: none;
 }
-@media only screen and (min-width: 768px) {
-  .header-socials {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .header-socials {
-    display: flex;
-    align-items: center;
-  }
-}
 
 /* dark tint for reusable links */
 .main-socials__link--dark {
@@ -107,4 +61,45 @@
 }
 .main-socials__link--dark:hover {
   color: var(--green-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    /* to achieve tablet header height 68px */
+    padding: 19px 0px;
+  }
+
+  .menu-button {
+    width: var(--menu-icon-width);
+    height: 28px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header-socials {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header {
+    /* to achieve desktop height 84px */
+    padding: 20px 0px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+  }
+
+  .header-socials {
+    display: flex;
+    align-items: center;
+  }
 }

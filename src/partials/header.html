@@ -1,7 +1,5 @@
-<!-- Adaptive header, by Volodymyr Vladykin -->
 <header class="header">
-  <div class="header__container container container__content">
-    <!-- Logo, link to core page -->
+  <div class="container container__content">
     <div class="logo">
       <a class="logo__link" href="./index.html"
         ><span class="logo__link--dark">english</span>excellence<span
@@ -12,15 +10,14 @@
     </div>
 
     <!-- Mobile menu button, will be hidden on desktop -->
-    <button class="header__mobile_menu_button" type="button">
-      <svg class="header__mobile_menu_icon" width="32" height="32">
+    <button class="menu-button" type="button">
+      <svg class="menu-button_icon" width="32" height="32">
         <use href="./img/sprite.svg#icon-menu"></use>
       </svg>
     </button>
 
-    <!-- Main navigation -->
-    <nav class="nav">
-      <!-- Navigation menu (visible only on desktop) -->
+    <nav class="header__nav">
+      <!-- Navigation menu, visible only on desktop -->
       <ul class="header__nav_list">
         <li>
           <a href="#" class="nav_link header__nav_link--dark">About us</a>
@@ -40,6 +37,7 @@
       </ul>
     </nav>
 
+    <!-- Socials, vissible only on mobile/tablet -->
     <div class="header-socials">
       <ul class="main-socials__list">
         <li class="main-socials__item">
