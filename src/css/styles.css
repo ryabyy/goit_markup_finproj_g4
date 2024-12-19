@@ -12,7 +12,7 @@
 @import url('./utils/variables.css');
 
 /* Common styles */
-/* @import url('./base/reset.css'); */
+@import url('./base/reset.css');
 @import url('./base/base.css');
 @import url('./base/animations.css');
 
