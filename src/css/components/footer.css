@@ -1,6 +1,9 @@
 .footer {
   width: 100%;
   background-color: var(--black-color);
+
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .footer .container {
@@ -10,12 +13,20 @@
   color: var(--white-color);
 }
 
+.address {
+  margin-top: 20px;
+}
+.address_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .address__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
-  /* FIXME update color */
+  /* FIXME update colors to variables */
   color: rgba(255, 255, 255, 0.6);
   opacity: 0.9;
 }
@@ -26,19 +37,47 @@
   color: #fff;
 }
 
+.footer__nav-list {
+  margin-top: 40px;
+}
+
 .footer__nav_link--dark {
   color: var(--white-color);
 }
 
+.footer__social-list {
+  margin-top: 40px;
+}
 .main-socials__link--light {
   fill: var(--white-color);
 }
 
 .legal {
+  position: relative;
+  margin-top: 60px;
+
+  /* TODO remove what is already reusable */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.6);
   opacity: 0.9;
+}
+
+.legal::before {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.legal__links-list {
+  margin-top: 14px;
+  display: flex;
+  gap: 18px;
 }
