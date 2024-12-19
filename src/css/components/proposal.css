@@ -1,0 +1,124 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.container__proposal {
+  padding: 72px 64px 144px 64px;
+  border-radius: 30px;
+  background: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
+}
+
+.proposal__header {
+  margin-bottom: 120px;
+  font-weight: 700;
+  font-size: var(--proposal-header-font-size);
+  line-height: 1.17;
+  color: var(--white-color);
+}
+
+.proposal__header--span {
+  color: var(--lighter-green-color);
+}
+
+.proposal__content-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.proposal__content-wrapper::before,
+.proposal__content-wrapper::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+}
+
+.proposal__content-wrapper::before {
+  top: calc((var(--proposal-front-card-height) - var(--proposal-mid-card-height)) / 2);
+  left: calc((var(--proposal-front-card-width) - var(--proposal-mid-card-width)) / 2);
+  width: 1050px;
+  height: 463px;
+  background-color: var(--lighter-green-color);
+  transform: rotate(-8deg);
+  z-index: -1;
+}
+
+.proposal__content-wrapper::after {
+  top: calc((var(--proposal-front-card-height) - var(--proposal-back-card-height)) / 2);
+  left: calc((var(--proposal-front-card-width) - var(--proposal-back-card-width)) / 2);
+  width: 1011px;
+  height: 402px;
+  background-color: var(--white-color-50);
+  transform: rotate(11deg);
+  z-index: -2;
+}
+
+.proposal__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 0 72px 72px;
+  border-radius: 30px;
+  background-color: var(--white-color);
+}
+
+
+
+.proposal__subheader {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: var(--proposal-subheader-font-size);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black-color);
+}
+
+.proposal__feature-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  width: 654px;
+  gap: 16px;
+}
+
+.proposal__feature {
+  display: flex;
+}
+
+.proposal__icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+}
+
+.proposal__icon {
+  fill: var(--white-color);
+}
+
+.proposal__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black-color);
+}
+
+.proposal_btn {
+  padding: 16px 64px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.proposal__img {
+  display: flex;
+  align-items: flex-end;
+}

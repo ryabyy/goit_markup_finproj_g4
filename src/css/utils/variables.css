@@ -1,9 +1,11 @@
 :root {
   /* Colors */
   --white-color: #fff;
+  --white-color-50: #ffffff80;
   --black-color: #121417;
   --green-color: #4dc274;
   --light-green-color: #d4fde1;
+  --lighter-green-color: #bee8cc;
   --gray-color: #f3f5f6;
 
   /* Borders */
@@ -46,6 +48,12 @@
   --proposal-header-font-size: 60px;
   --proposal-subheader-font-size: 40px;
   --proposal-features-font-size: 20px;
+  --proposal-front-card-width: 1024px;
+  --proposal-front-card-height: 471px;
+  --proposal-mid-card-width: 1050px;
+  --proposal-mid-card-height: 463px;
+  --proposal-back-card-width: 1011px;
+  --proposal-back-card-height: 402px;
 
   --application-card-header-font-size: 40px;
   --application-card-description-font-size: 16px;
