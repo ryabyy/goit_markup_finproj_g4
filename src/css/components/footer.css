@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  background-color: var(--black-color);
+}
+
+.footer .container {
+}
+
+.logo__link--light {
+  color: var(--white-color);
+}
+
+.address__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  /* FIXME update color */
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.9;
+}
+.address_value {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #fff;
+}
+
+.footer__nav_link--dark {
+  color: var(--white-color);
+}
+
+.main-socials__link--light {
+  fill: var(--white-color);
+}
+
+.legal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.9;
+}
