@@ -1,7 +1,3 @@
-:root {
-    font-family: "Manrope", sans-serif;
-}
-
 .section__title {
     text-align: center;
     font-size: var(--heading-font-size-mobile);
@@ -9,6 +5,7 @@
     line-height: 2.25rem;
     margin-bottom: 16px;
 }   
+
 .section__title--decoration {
     position: relative;
 }
@@ -17,7 +14,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 26px;
+    bottom: 0;
     right: 0;
     height: 12px;
     width: 116px;
@@ -102,15 +99,13 @@
 }
 
 @media screen and (min-width: 768px) {
-
     .section__title {
         font-size: var(--heading-font-size);
     }
 
     .section__title--decoration::after {
-        width: 150px;
+        width: 144px;
         height: 20px;
-        top: 34px;
     }
 
     .section__content {
@@ -129,6 +124,7 @@
     .lessons__item{
         padding: 32px 16px;
     }
+
     .lessons__item:not(:last-child) {
         margin-bottom: 0;
     }
