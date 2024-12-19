@@ -50,7 +50,9 @@
   --hero-font-size-mobile: 38px;
 
   --proposal-header-font-size: 60px;
+  --proposal-header-font-size-mobile: 38px;
   --proposal-subheader-font-size: 40px;
+  --proposal-subheader-font-size-mobile: 20px;
   --proposal-features-font-size: 20px;
   --proposal-front-card-width: 1024px;
   --proposal-front-card-height: 471px;
