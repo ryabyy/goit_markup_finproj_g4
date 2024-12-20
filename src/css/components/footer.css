@@ -7,6 +7,7 @@
 }
 
 .footer .container {
+  display: block;
 }
 
 .logo__link--light {
@@ -39,6 +40,9 @@
 
 .footer__nav-list {
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .footer__nav_link--dark {
@@ -49,7 +53,11 @@
   margin-top: 40px;
 }
 .main-socials__link--light {
-  fill: var(--white-color);
+  color: var(--white-color);
+  /* fill: var(--white-color); */
+}
+.main-socials__link--light:hover {
+  color: var(--green-color);
 }
 
 .legal {
@@ -80,4 +88,20 @@
   margin-top: 14px;
   display: flex;
   gap: 18px;
+}
+
+/* TODO is it OK start? or should we start just reformatting of 
+markup to consider tablet and desktop layouts??? */
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .footer .container {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
 }
