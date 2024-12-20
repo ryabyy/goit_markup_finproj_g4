@@ -1,6 +1,7 @@
 (function () {
   const mobileMenuOpenButton = document.querySelector('.menu-button');
   const mobileMenuCloseButton = document.querySelector('.menu-close');
+  const mobileMenuNavButtons = document.querySelectorAll('.menu-link');
   const menuOverlay = document.querySelector('.menu-overlay');
 
   function toggleMenu() {
@@ -12,5 +13,10 @@
   }
   if (mobileMenuCloseButton) {
     mobileMenuCloseButton.addEventListener('click', toggleMenu);
+  }
+  if (mobileMenuNavButtons) {
+    mobileMenuNavButtons.forEach(button => {
+      button.addEventListener('click', toggleMenu);
+    });
   }
 })();
