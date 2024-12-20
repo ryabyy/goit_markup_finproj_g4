@@ -6,7 +6,7 @@
   padding-bottom: 20px;
 }
 
-.footer .container {
+.footer_links {
   display: block;
 }
 
@@ -54,7 +54,6 @@
 }
 .main-socials__link--light {
   color: var(--white-color);
-  /* fill: var(--white-color); */
 }
 .main-socials__link--light:hover {
   color: var(--green-color);
@@ -90,18 +89,45 @@
   gap: 18px;
 }
 
-/* TODO is it OK start? or should we start just reformatting of 
-markup to consider tablet and desktop layouts??? */
 @media only screen and (min-width: 768px) {
   .footer {
     padding-top: 32px;
     padding-bottom: 16px;
   }
 
-  .footer .container {
+  .footer_links {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__nav-list {
+    margin-top: 0;
+  }
+
+  .footer__social-list {
+    margin-top: 0;
+  }
+
+  .footer .main-socials__list {
+    align-items: normal;
+  }
+
+  .legal {
+    margin-top: 126px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .legal__links-list {
+    margin-top: 0;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .legal {
+    margin-top: 87px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
