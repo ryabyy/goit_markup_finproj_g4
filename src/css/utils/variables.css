@@ -1,9 +1,12 @@
 :root {
   /* Colors */
   --white-color: #fff;
+  --white-color-50: #ffffff80;
   --black-color: #121417;
   --green-color: #4dc274;
+  --dark-green-color: #38ae5f;
   --light-green-color: #d4fde1;
+  --lighter-green-color: #bee8cc;
   --gray-color: #f3f5f6;
 
   /* Borders */
@@ -47,7 +50,9 @@
   --hero-font-size-mobile: 38px;
 
   --proposal-header-font-size: 60px;
+  --proposal-header-font-size-mobile: 38px;
   --proposal-subheader-font-size: 40px;
+  --proposal-subheader-font-size-mobile: 20px;
   --proposal-features-font-size: 20px;
 
   --application-card-header-font-size: 40px;
