@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--green-color);
-    border-radius: var(--card-border-radius);
+    border-radius: var(--card-border-radius-mobile);
     padding: 50px 16px;
 }
 
@@ -55,7 +55,12 @@
         gap: 32px;
     }
 
+    .about__feature {
+        border-radius: var(--card-border-radius);
+    }
+
     .about__image-wrapper {
+        border-radius: var(--card-border-radius);
         padding-top: 16px;
         padding-bottom: 16px;
     }
