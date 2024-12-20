@@ -73,11 +73,6 @@
         font-size: var(--heading-font-size);
     }
 
-    .section__title--decoration::after {
-        width: 144px;
-        height: 20px;
-    }
-
     .section__content {
         font-size: var(--description-font-size);
         max-width: 665px;
@@ -88,7 +83,7 @@
         margin-top: 64px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);     
+        grid-template-rows: repeat(2, 1fr);
         gap: 32px;
     }
     .lessons__item{
