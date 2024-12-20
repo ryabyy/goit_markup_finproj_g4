@@ -17,20 +17,21 @@
 .address {
   margin-top: 20px;
 }
+
 .address_list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .address__label {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
-  /* FIXME update colors to variables */
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(from var(--white-color) r g b / 0.6);
   opacity: 0.9;
 }
+
 .address_value {
   font-weight: 600;
   font-size: 14px;
@@ -52,9 +53,11 @@
 .footer__social-list {
   margin-top: 40px;
 }
+
 .main-socials__link--light {
   color: var(--white-color);
 }
+
 .main-socials__link--light:hover {
   color: var(--green-color);
 }
@@ -62,13 +65,10 @@
 .legal {
   position: relative;
   margin-top: 60px;
-
-  /* TODO remove what is already reusable */
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(from var(--white-color) r g b / 0.6);
   opacity: 0.9;
 }
 
@@ -77,7 +77,6 @@
   content: '';
   top: -20px;
   left: 0;
-
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -114,7 +113,6 @@
 
   .legal {
     margin-top: 126px;
-
     display: flex;
     justify-content: space-between;
   }
