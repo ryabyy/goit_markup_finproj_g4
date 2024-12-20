@@ -30,4 +30,3 @@
     });
   }
 })();
-application - button;
