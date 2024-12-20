@@ -1,17 +1,17 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: Manrope, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: var(--common-font), system-ui, -apple-system, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: var(--black-color);
+  background-color: var(--white-color);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -111,3 +111,75 @@ main:has(.back-link) {
     height: 20px;
   }
 }
+
+/* #region Logo */
+/* Logo, reusable part */
+.logo {
+  color: var(--green-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+/* #endregion */
+
+/* #region Nav links */
+/* Navigation links, reusable part */
+.nav_link {
+  /* to power pseudo-element */
+  position: relative;
+
+  font-weight: 600;
+  font-size: var(--navigation-font-size);
+  line-height: 1.29;
+}
+.nav_link:after {
+  content: '';
+
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+
+  width: 37px;
+  height: 2px;
+  background-color: var(--green-color);
+
+  /* transition, define it here, and make it visible when :hover */
+  transition: var(--default-trns);
+  transition-property: scale;
+  scale: 0;
+  transform-origin: left;
+}
+.nav_link:hover::after {
+  scale: 1;
+}
+/* #endregion */
+
+/* #region Socials */
+/* Socials, reusable part */
+.main-socials__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.main-socials__link {
+  border: 1px solid rgb(from currentColor r g b / 0.1);
+  border-radius: 10px;
+  padding: 7px; /* note padding here, it's 7 instead of 8, to consider 1px border and preserve total size of item as 44px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: var(--default-trns);
+  transition-property: color, border-color;
+}
+.main-socials__link:hover {
+  border-color: rgb(from currentColor r g b / 0.1);
+}
+.main-socials__link_icon {
+  width: 28px;
+  height: 28px;
+
+  fill: currentColor;
+}
+/* #endregion */
