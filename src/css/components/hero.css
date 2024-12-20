@@ -1,6 +1,5 @@
 .hero {
     padding-top: 8px;
-    padding-bottom: 8px;
 }
 
 .hero__container {
@@ -58,12 +57,42 @@
     z-index: -1;
 }
 
+.hero__arrow {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__arrow:active,
+.hero__arrow:hover {
+    background: var(--green-color);
+}
+
+.hero__arrow-icon {
+    fill: var(--green-color);
+    width: 20px;
+    height: 20px;
+}
+
+
+.hero__arrow:active .hero__arrow-icon,
+.hero__arrow:hover .hero__arrow-icon {
+    fill: var(--white-color);
+}
+
 @media only screen and (min-width: 768px) {
     .hero__container {
-        margin-bottom: 32px;
         height: 857px;
         padding: 32px;
         align-items: center;
+        border-radius: var(--card-border-radius);
     }
 
     .hero__content {
@@ -76,11 +105,22 @@
         line-height: 70px;
     }
 
-
     .hero__button {
         max-width: 306px;
         line-height: 28px;
         font-size: var(--button-font-size);
+    }
+
+    .hero__arrow {
+        bottom: 32px;
+        right: 32px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero__arrow-icon {
+        width: 24px;
+        height: 24px;
     }
 }
 
