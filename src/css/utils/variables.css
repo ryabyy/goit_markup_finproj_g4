@@ -85,4 +85,14 @@
 
   --footer-address-font-size: 14px;
   --footer-legal-font-size: 14px;
+
+  /* Header */
+  --header-mobile-height: 67px;
+  --header-tablet-height: 68px;
+  --header-desktop-height: 84px;
+
+  /* Hero */
+  --hero-mobile-padding-top: 8px;
+  --hero-tablet-padding-top: 32px;
+  --hero-desktop-padding-top: 16px;
 }
