@@ -1,0 +1,131 @@
+.footer {
+  width: 100%;
+  background-color: var(--black-color);
+
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer_links {
+  display: block;
+}
+
+.logo__link--light {
+  color: var(--white-color);
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.address__label {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgb(from var(--white-color) r g b / 0.6);
+  opacity: 0.9;
+}
+
+.address_value {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #fff;
+}
+
+.footer__nav-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__nav_link--dark {
+  color: var(--white-color);
+}
+
+.footer__social-list {
+  margin-top: 40px;
+}
+
+.main-socials__link--light {
+  color: var(--white-color);
+}
+
+.main-socials__link--light:hover {
+  color: var(--green-color);
+}
+
+.legal {
+  position: relative;
+  margin-top: 60px;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgb(from var(--white-color) r g b / 0.6);
+  opacity: 0.9;
+}
+
+.legal::before {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.legal__links-list {
+  margin-top: 14px;
+  display: flex;
+  gap: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .footer_links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__nav-list {
+    margin-top: 0;
+  }
+
+  .footer__social-list {
+    margin-top: 0;
+  }
+
+  .footer .main-socials__list {
+    align-items: normal;
+  }
+
+  .legal {
+    margin-top: 126px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .legal__links-list {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .legal {
+    margin-top: 87px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
