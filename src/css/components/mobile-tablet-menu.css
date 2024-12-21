@@ -56,7 +56,6 @@
 }
 
 .menu-link {
-  font-family: 'Manrope', sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -109,7 +108,7 @@
     height: 40px;
   }
 
-  .social-icon a{
+  .social-icon a {
     width: 28px;
     height: 28px;
   }
