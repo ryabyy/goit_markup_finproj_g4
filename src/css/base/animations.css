@@ -1,18 +1,13 @@
-@keyframes slide {
+@keyframes wavy-face {
   from {
-    transform: translateX(-140%) translateY(-50%);
+    transform: translateX(calc(-1 * var(--wavy-face-shift)))
+      rotate(calc(-1 * var(--wavy-face-degree))) scale(var(--wavy-face-scale));
+  }
+  50% {
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-104%) translateY(-50%);
-  }
-}
-@keyframes stretch {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(100%) scale(0.2);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(100%) scale(1);
+    transform: translateX(var(--wavy-face-shift))
+      rotate(var(--wavy-face-degree)) scale(var(--wavy-face-scale));
   }
 }
