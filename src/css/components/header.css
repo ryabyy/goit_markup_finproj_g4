@@ -13,11 +13,9 @@
 .menu-button {
   width: var(--menu-icon-width-mobile);
   height: var(--menu-icon-width-mobile);
-
   padding: 0;
   border: none;
   background-color: transparent;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,17 +25,14 @@
   stroke: var(--black-color);
 }
 
-/* Logo, dark tint */
 .logo__link--dark {
   color: var(--black-color);
 }
 
-/* Nav, visible only on desktop */
 .header__nav {
   display: none;
 }
 
-/* Nav links, visible only on desktop */
 .header__nav_list {
   display: flex;
   flex-direction: row;
@@ -50,15 +45,14 @@
   color: var(--black-color);
 }
 
-/* Socials, visible only on desktop */
 .header-socials {
   display: none;
 }
 
-/* dark tint for reusable links */
 .main-socials__link--dark {
   color: var(--black-color);
 }
+
 .main-socials__link--dark:hover {
   color: var(--green-color);
 }
