@@ -37,7 +37,8 @@ main:has(.back-link) {
 }
 
 .section {
-  padding: var(--section-mobile-padding-y) 0;
+  padding-top: var(--section-mobile-padding-y);
+  padding-bottom: var(--section-mobile-padding-y);
 }
 
 .section__head {
@@ -88,7 +89,8 @@ main:has(.back-link) {
   }
 
   .section {
-    padding: var(--section-tablet-padding-y) 0;
+    padding-top: var(--section-tablet-padding-y);
+    padding-bottom: var(--section-tablet-padding-y);
   }
 
   .section__head {
@@ -116,7 +118,8 @@ main:has(.back-link) {
   }
 
   .section {
-    padding: var(--section-desktop-padding-y) 0;
+    padding-top: var(--section-desktop-padding-y);
+    padding-bottom: var(--section-desktop-padding-y);
   }
 
   .container__content {
