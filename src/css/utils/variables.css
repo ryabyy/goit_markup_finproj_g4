@@ -100,4 +100,11 @@
   --hero-mobile-padding-top: 8px;
   --hero-tablet-padding-top: 32px;
   --hero-desktop-padding-top: 16px;
+
+  /* Animations */
+  --wavy-face-duration: 2.5s;
+  --wavy-face-timing: ease-in-out;
+  --wavy-face-degree: 10deg;
+  --wavy-face-shift: 5%;
+  --wavy-face-scale: 0.9;
 }
