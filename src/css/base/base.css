@@ -37,7 +37,7 @@ main:has(.back-link) {
 }
 
 .section {
-  margin-bottom: 80px;
+  padding: var(--section-mobile-padding-y) 0;
 }
 
 .section__head {
@@ -88,7 +88,7 @@ main:has(.back-link) {
   }
 
   .section {
-    margin-bottom: 100px;
+    padding: var(--section-tablet-padding-y) 0;
   }
 
   .section__head {
@@ -116,7 +116,7 @@ main:has(.back-link) {
   }
 
   .section {
-    margin-bottom: 96px;
+    padding: var(--section-desktop-padding-y) 0;
   }
 
   .container__content {

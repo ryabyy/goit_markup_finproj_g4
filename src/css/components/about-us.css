@@ -1,3 +1,7 @@
+.about {
+  padding-top: calc(var(--section-mobile-padding-y) * 2);
+}
+
 .about__content {
   display: flex;
   flex-direction: column;
@@ -43,6 +47,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .about {
+    padding-top: calc(var(--section-tablet-padding-y) * 2);
+  }
+
   .about__content {
     gap: 32px;
   }
@@ -64,6 +72,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .about {
+    padding-top: calc(var(--section-desktop-padding-y) * 2);
+  }
+
   .about__content {
     flex-direction: row;
   }
