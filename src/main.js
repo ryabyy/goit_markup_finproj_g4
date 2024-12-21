@@ -1,3 +1,6 @@
+import Swiper from 'swiper';
+import { Autoplay } from 'swiper/modules';
+
 (function () {
   const mobileMenuOpenButton = document.querySelector('.menu-button');
   const mobileMenuCloseButton = document.querySelector('.menu-close');
@@ -30,3 +33,26 @@
     });
   }
 })();
+
+const swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false,
+    reverseDirection: false,
+  },
+  slidesPerView: 1,
+  spaceBetween: 32,
+  centeredSlides: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  },
+  modules: [Autoplay],
+});
