@@ -91,6 +91,11 @@
   --header-tablet-height: 68px;
   --header-desktop-height: 84px;
 
+  /* Section */
+  --section-mobile-padding-y: 40px;
+  --section-tablet-padding-y: 50px;
+  --section-desktop-padding-y: 75px;
+
   /* Hero */
   --hero-mobile-padding-top: 8px;
   --hero-tablet-padding-top: 32px;

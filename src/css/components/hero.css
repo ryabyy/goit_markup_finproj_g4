@@ -1,5 +1,6 @@
 .hero {
   padding-top: var(--hero-mobile-padding-top);
+  padding-bottom: var(--hero-mobile-padding-top);
 }
 
 .hero__container {
@@ -91,6 +92,7 @@
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: var(--hero-tablet-padding-top);
+    padding-bottom: var(--hero-tablet-padding-top);
   }
 
   .hero__container {
@@ -135,6 +137,7 @@
 @media only screen and (min-width: 1280px) {
   .hero {
     padding-top: var(--hero-desktop-padding-top);
+    padding-bottom: var(--hero-desktop-padding-top);
   }
 
   .hero__container {
