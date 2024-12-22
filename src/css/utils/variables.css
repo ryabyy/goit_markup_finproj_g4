@@ -115,4 +115,8 @@
   --wavy-face-degree: 10deg;
   --wavy-face-shift: 5%;
   --wavy-face-scale: 0.9;
+
+  --button-zoom-duration: 100ms;
+  --button-zoom-timing: linear;
+  --button-zoom-factor: 1.02;
 }
