@@ -63,10 +63,6 @@
     padding-bottom: calc(var(--section-tablet-padding-y) * 2);
   }
 
-  .reviews__list {
-    gap: 32px;
-  }
-
   .reviews__list li:nth-last-child(-n + 2) {
     display: block;
   }
