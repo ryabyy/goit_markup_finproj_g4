@@ -30,6 +30,8 @@
               name="name"
               id="name"
               placeholder="Name"
+              pattern="[A-Za-z]{1,32}"
+              required
             />
           </label>
           <label for="email" class="application__label">
@@ -39,6 +41,8 @@
               name="email"
               id="email"
               placeholder="Email"
+              pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+              required
             />
           </label>
           <label for="phone" class="application__label">
@@ -48,6 +52,8 @@
               name="phone"
               id="phone"
               placeholder="Phone"
+              pattern="[0-9]{10}"
+              required
             />
           </label>
           <textarea
