@@ -24,7 +24,7 @@
 }
 
 .address__label {
-  font-size: 14px;
+  font-size: var(--footer-address-font-size);
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgb(from var(--white-color) r g b / 0.6);
@@ -33,9 +33,9 @@
 
 .address_value {
   font-weight: 600;
-  font-size: 14px;
+  font-size: var(--footer-address-font-size);
   line-height: 1.28571;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .footer__nav-list {
@@ -64,7 +64,7 @@
 .legal {
   position: relative;
   margin-top: 60px;
-  font-size: 14px;
+  font-size: var(--footer-legal-font-size);
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgb(from var(--white-color) r g b / 0.6);
@@ -78,7 +78,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--white-line-color);
 }
 
 .legal__links-list {
