@@ -8,22 +8,27 @@ import { Autoplay } from 'swiper/modules';
   const menuOverlay = document.querySelector('.menu-overlay');
   const applicationButtons = document.querySelectorAll('.application-button');
   const applicationBtnTarget = document.querySelector('#contact-us');
+  let menuIsShown = false;
 
   function toggleMenu() {
     menuOverlay.classList.toggle('is-shown');
+    menuIsShown = !menuIsShown;
   }
 
   if (mobileMenuOpenButton) {
     mobileMenuOpenButton.addEventListener('click', toggleMenu);
   }
+
   if (mobileMenuCloseButton) {
     mobileMenuCloseButton.addEventListener('click', toggleMenu);
   }
+
   if (mobileMenuNavButtons) {
     mobileMenuNavButtons.forEach(button => {
       button.addEventListener('click', toggleMenu);
     });
   }
+
   if (applicationButtons) {
     applicationButtons.forEach(button => {
       button.addEventListener('click', () => {
@@ -32,6 +37,17 @@ import { Autoplay } from 'swiper/modules';
       });
     });
   }
+
+  function handleResize() {
+    if (window.innerWidth > 1280 && menuIsShown) {
+      menuOverlay.classList.remove('is-shown');
+      menuIsShown = false;
+    }
+  }
+
+  window.addEventListener('resize', handleResize);
+
+  handleResize();
 })();
 
 const swiper = new Swiper('.swiper-container', {
