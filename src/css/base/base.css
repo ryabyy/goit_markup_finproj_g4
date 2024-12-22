@@ -89,11 +89,6 @@ main:has(.back-link) {
   font-weight: 700;
   font-size: 20px;
 }
-
-.logo__link {
-  /* use this as hack to avoid extra spaces between words in logo */
-  display: flex;
-}
 /* #endregion */
 
 /* #region Nav links */
