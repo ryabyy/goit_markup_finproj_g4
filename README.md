@@ -50,6 +50,7 @@ Since the project is produced by a team, some of the used technologies might dif
 - Google Fonts - for a custom font used in the design
 - Image optimization and packaging services: https://squoosh.app/, https://icomoon.io/, https://svgomg.net/
 - Font conversion/optimization: https://webfont.yabe.land/en/misc/convert-ttf-woff2/
+- Slider implementation: https://swiperjs.com/
 - Code validators: https://validator.w3.org/ & https://jigsaw.w3.org/css-validator/
 - Page speed testing: https://pagespeed.web.dev/
 
