@@ -124,7 +124,7 @@
 
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .application__image__box {
-    background-image: url(../../img/girl-desk@2x.jpg);
+    background-image: url(../img/girl-desk@2x.jpg);
   }
 }
 
@@ -183,7 +183,7 @@
   .application__image__box {
     width: 492px;
     height: 392px;
-    background-image: url(../../img/girl-desk.jpg);
+    background-image: url(../img/girl-desk.jpg);
     background-repeat: no-repeat;
     border-bottom-right-radius: 49%;
     border-bottom-left-radius: 50%;
