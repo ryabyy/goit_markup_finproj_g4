@@ -122,13 +122,13 @@
   border: 2px solid var(--green-color);
 }
 
-@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .application__image__box {
     background-image: url(../../img/girl-desk@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .application__container {
     margin-top: 64px;
   }
@@ -166,7 +166,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .application__container {
     display: flex;
     flex-direction: row;
