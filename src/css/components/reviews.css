@@ -4,14 +4,14 @@
 
 .reviews__item {
   padding: 20px;
-  background-color: rgba(243, 245, 246, 1);
+  background-color: var(--gray-color);
   border-radius: 16px;
   overflow: hidden;
 }
 
 .reviews__user {
   border-radius: 8px;
-  background-color: rgba(77, 194, 116, 1);
+  background-color: var(--green-color);
   display: flex;
   align-items: center;
   padding: 14px 14px;
@@ -23,23 +23,23 @@
 
 .reviews__name {
   font-weight: 700;
-  font-size: 20px;
+  font-size: var(--review-name-font-size);
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 1);
+  color: var(--white-color);
   margin-bottom: 2px;
 }
 
 .reviews__role {
-  font-size: 12px;
+  font-size: var(--review-role-font-size);
   line-height: 1.33;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--half-white-color);
 }
 
 .reviews__description {
-  font-size: 14px;
+  font-size: var(--review-descr-font-size-mobile);
   line-height: 1.71;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--half-black-color);
   margin: 20px 14px 0;
 }
 
@@ -79,7 +79,7 @@
   }
 
   .reviews__description {
-    font-size: 16px;
+    font-size: var(--review-descr-font-size);
     line-height: 1.5;
     margin: 32px 16px 0;
   }

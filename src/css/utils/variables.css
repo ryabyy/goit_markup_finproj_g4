@@ -1,13 +1,18 @@
 :root {
   /* Colors */
   --white-color: #fff;
-  --white-color-50: #ffffff80;
   --black-color: #121417;
   --green-color: #4dc274;
   --dark-green-color: #38ae5f;
   --light-green-color: #d4fde1;
   --lighter-green-color: #bee8cc;
   --gray-color: #f3f5f6;
+  --half-black-color: #12141780;
+  --half-white-color: #ffffff80;
+  --semi-white-color: #ffffffb3;
+  --black-line-color: rgba(18, 20, 23, 0.1);
+  --white-line-color: rgba(255, 255, 255, 0.1);
+  --overlay-color: rgba(18, 20, 23, 0.4);
 
   /* Borders */
   --button-border-radius: 12px;
@@ -49,11 +54,15 @@
   --hero-font-size: 60px;
   --hero-font-size-mobile: 38px;
 
+  --benefit-number-font-size: 28px;
+  --benefit-text-font-size: 20px;
+
   --proposal-header-font-size: 60px;
   --proposal-header-font-size-mobile: 38px;
   --proposal-subheader-font-size: 40px;
   --proposal-subheader-font-size-mobile: 20px;
   --proposal-features-font-size: 20px;
+  --proposal-features-font-size-mobile: 14px;
 
   --application-card-header-font-size: 40px;
   --application-card-description-font-size: 16px;
@@ -72,9 +81,6 @@
   --bio-descr-font-size: 16px;
   --bio-descr-font-size-mobile: 14px;
 
-  --benefit-number-font-size: 28px;
-  --benefit-text-font-size: 20px;
-
   --plan-name-font-size: 20px;
   --plan-price-font-size: 32px;
   --plan-descr-font-size: 16px;
@@ -85,6 +91,8 @@
 
   --footer-address-font-size: 14px;
   --footer-legal-font-size: 14px;
+
+  --menu-link-font-size: 14px;
 
   /* Header */
   --header-mobile-height: 67px;
@@ -107,4 +115,8 @@
   --wavy-face-degree: 10deg;
   --wavy-face-shift: 5%;
   --wavy-face-scale: 0.9;
+
+  --button-zoom-duration: 100ms;
+  --button-zoom-timing: linear;
+  --button-zoom-factor: 1.02;
 }

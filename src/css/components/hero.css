@@ -11,7 +11,9 @@
   padding: 72px 20px;
   min-height: 420px;
   max-height: 709px;
-  height: calc(100vh - var(--header-mobile-height) - (var(--hero-mobile-padding-top) * 2));
+  height: calc(
+    100vh - var(--header-mobile-height) - (var(--hero-mobile-padding-top) * 2)
+  );
 }
 
 .hero__content {
@@ -20,7 +22,7 @@
 
 .hero__title {
   margin-bottom: 40px;
-  font-size: 38px;
+  font-size: var(--hero-font-size-mobile);
   color: var(--white-color);
   line-height: 40px;
 }
@@ -38,14 +40,13 @@
   max-width: 295px;
 }
 
-
 .hero__button:active,
 .hero__button:hover {
-  background: #38AE5F;
+  background: var(--dark-green-color);
 }
 
 .hero__title span {
-  color: #BEE8CC;
+  color: var(--lighter-green-color);
 }
 
 .hero__image {
@@ -83,7 +84,6 @@
   height: 20px;
 }
 
-
 .hero__arrow:active .hero__arrow-icon,
 .hero__arrow:hover .hero__arrow-icon {
   fill: var(--white-color);
@@ -101,7 +101,9 @@
     border-radius: var(--card-border-radius);
     min-height: 450px;
     max-height: 857px;
-    height: calc(100vh - var(--header-tablet-height) - (var(--hero-tablet-padding-top) * 2));
+    height: calc(
+      100vh - var(--header-tablet-height) - (var(--hero-tablet-padding-top) * 2)
+    );
   }
 
   .hero__content {
@@ -110,7 +112,7 @@
   }
 
   .hero__title {
-    font-size: 60px;
+    font-size: var(--hero-font-size);
     line-height: 70px;
   }
 
@@ -144,7 +146,10 @@
     padding: 64px;
     min-height: 520px;
     max-height: 629px;
-    height: calc(100vh - var(--header-desktop-height) - (var(--hero-desktop-padding-top) * 2));
+    height: calc(
+      100vh - var(--header-desktop-height) -
+        (var(--hero-desktop-padding-top) * 2)
+    );
   }
 
   .hero__content {

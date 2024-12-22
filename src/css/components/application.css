@@ -1,207 +1,210 @@
 .application__container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .application__container__image {
-    display: none;
+  display: none;
 }
 
 .form__inputs__box {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .application__input,
-.application__textarea
- {
-    box-sizing: border-box;
-    padding: 16px 18px;
-    width: 100%;
-    border-radius: var(--field-border-radius);
-    border: 1px solid rgba(18, 20, 23, 0.1);
-    background-color: transparent;
-    outline: none; 
-    color: var(--black-color)
+.application__textarea {
+  box-sizing: border-box;
+  padding: 16px 18px;
+  width: 100%;
+  border-radius: var(--field-border-radius);
+  border: 1px solid var(--black-line-color);
+  background-color: transparent;
+  outline: none;
+  color: var(--black-color);
 }
 
 .application__input {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .application__input::placeholder,
 .application__textarea::placeholder {
-    color: var(--black-color);
+  color: var(--black-color);
 }
 
 .application__textarea {
-    height: 94px;
-    resize: none;
+  height: 94px;
+  resize: none;
 }
 
-.application__input:focus, 
-.application__textarea:focus{
-    border: 1px solid var(--green-color);
+.application__input:focus,
+.application__textarea:focus {
+  border: 1px solid var(--green-color);
 }
 
 .radio__title {
-    font-size: var(--radio-button-font-size);
-    font-weight: 400;
-    margin-bottom: 14px;
+  font-size: var(--application-section-header-font-size-mobile);
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .form__radio__box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .form__submit__btn {
-    width: 100%;
-    border-radius: var(--button-border-radius);
-    padding: 14px 0px;
-    color: var(--white-color);
-    border: 1px solid var(--green-color);
-    background-color: var(--green-color);
-    font-size: var(--button-font-size-mobile);
-    font-weight: 700;
-    margin-bottom: 16px;
+  width: 100%;
+  border-radius: var(--button-border-radius);
+  padding: 14px 0px;
+  color: var(--white-color);
+  border: 1px solid var(--green-color);
+  background-color: var(--green-color);
+  font-size: var(--button-font-size-mobile);
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 .form__submit__btn:hover {
-    background-color: #38AE5F;
-    border: 1px solid #38AE5F;
+  background-color: var(--dark-green-color);
+  border: 1px solid var(--dark-green-color);
 }
 
 .application__form__agreement {
-    font-size: var(--privacy-agreement-font-size-mobile);
-    color: rgb(18, 20, 23, 50%);
+  font-size: var(--privacy-agreement-font-size-mobile);
+  color: rgb(18, 20, 23, 50%);
 }
 
 /* RADIO BUTTON STYLES */
 .radio__item {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .radio__item:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .radio__item input[type='radio'] {
-    display: none;
+  display: none;
 }
 
 .radio__item label {
-    font-size: var(--radio-button-font-size-mobile);
+  font-size: var(--radio-button-font-size-mobile);
 }
 
 .radio__item label:before {
-    content: " ";
-    display: inline-block;
-    position: relative;
-    top: 5px;
-    margin: auto 9px 2px 0;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 2px solid rgb(18, 20, 23, 50%);;
-    background-color: transparent;
-    cursor: pointer;
+  content: ' ';
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: auto 9px 2px 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgb(18, 20, 23, 50%);
+  background-color: transparent;
+  cursor: pointer;
 }
-  
-.radio__item input[type=radio]:checked + label:after {
-    border-radius: 11px;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 9px;
-    left: 4px;
-    content: " ";
+
+.radio__item input[type='radio']:checked + label:after {
+  border-radius: 11px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  content: ' ';
+  display: block;
+  background: var(--green-color);
+}
+
+.radio__item input[type='radio']:checked + label:before {
+  border: 2px solid var(--green-color);
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .application__image__box {
+    background-image: url(../img/girl-desk@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .application__container {
+    margin-top: 64px;
+  }
+
+  .application__form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .form__inputs__box {
+    margin-bottom: 32px;
+  }
+
+  .form__radio__box {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .radio__title {
+    margin-bottom: 16px;
+    font-size: var(--application-section-header-font-size);
+  }
+
+  .radio__item label {
+    font-size: var(--radio-button-font-size);
+  }
+
+  .application__form__agreement {
+    font-size: var(--privacy-agreement-font-size);
+  }
+
+  .form__submit__btn {
+    font-size: var(--button-font-size);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .application__container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .application__container__image {
     display: block;
-    background: var(--green-color);
-}
-  
-.radio__item input[type=radio]:checked + label:before {
-    border: 2px solid var(--green-color);
-} 
+    background-color: var(--green-color);
+    max-width: min-content;
+    border-radius: 30px;
+  }
 
-@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-    .application__image__box {
-        background-image: url(../../img/girl-desk@2x.jpg);
-    }
-}
+  .application__image__box {
+    width: 492px;
+    height: 392px;
+    background-image: url(../img/girl-desk.jpg);
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 49%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: 20px;
+  }
 
-@media screen and (min-width: 768px) {
-    .application__container {
-        margin-top: 64px;
-    }
+  .application__text__box {
+    color: var(--white-color);
+    text-align: center;
+    padding: 0 20px 40px 20px;
+  }
 
-    .application__form {
-        max-width: 500px;
-        margin: 0 auto;
-    }
+  .application__text__box span {
+    font-size: var(--application-card-header-font-size);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
 
-    .form__inputs__box {
-        margin-bottom: 32px;
-    }
-
-    .form__radio__box {
-        flex-direction: row;
-        gap: 16px;
-        margin-bottom: 32px;
-    }
-
-    .radio__title {
-        margin-bottom: 16px;
-        font-size: 20px;
-    }
-
-    .radio__item label {
-        font-size: var(--radio-button-font-size);
-    }
-
-    .application__form__agreement {
-        font-size: var(--privacy-agreement-font-size);
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .application__container {
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
-    }
-
-    .application__container__image {
-        display: block;
-        background-color: var(--green-color);
-        max-width: min-content;
-        border-radius: 30px;
-    }
-
-    .application__image__box {
-        width: 492px;
-        height: 392px;
-        background-image: url(../../img/girl-desk.jpg);
-        background-repeat: no-repeat;
-        border-bottom-right-radius: 49%;
-        border-bottom-left-radius: 50%;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        margin-bottom: 20px;
-    }
-
-    .application__text__box {
-        color: var(--white-color);
-        text-align: center;
-        padding: 0 20px 40px 20px;
-    }
-
-    .application__text__box span {
-        font-size: var(--application-card-header-font-size);
-        margin-bottom: 8px;
-        font-weight: 700;
-    }
-
-    .application__text__box p {
-        font-size: var(--application-card-description-font-size);
-    }
+  .application__text__box p {
+    font-size: var(--application-card-description-font-size);
+  }
 }

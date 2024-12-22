@@ -150,6 +150,16 @@ main:has(.back-link) {
 }
 /* #endregion */
 
+.application-button {
+  transition-property: transform;
+  transition-duration: var(--button-zoom-duration);
+  transition-timing-function: var(--button-zoom-timing);
+}
+
+.application-button:hover {
+  transform: scale(var(--button-zoom-factor));
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
