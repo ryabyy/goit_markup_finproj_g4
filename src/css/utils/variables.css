@@ -49,6 +49,9 @@
   --hero-font-size: 60px;
   --hero-font-size-mobile: 38px;
 
+  --benefit-number-font-size: 28px;
+  --benefit-text-font-size: 20px;
+
   --proposal-header-font-size: 60px;
   --proposal-header-font-size-mobile: 38px;
   --proposal-subheader-font-size: 40px;
@@ -71,9 +74,6 @@
   --bio-name-font-size: 20px;
   --bio-descr-font-size: 16px;
   --bio-descr-font-size-mobile: 14px;
-
-  --benefit-number-font-size: 28px;
-  --benefit-text-font-size: 20px;
 
   --plan-name-font-size: 20px;
   --plan-price-font-size: 32px;
